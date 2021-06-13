@@ -2,9 +2,14 @@
   "name": "honifuwa-project",
   "version": "0.0.1",
   "description": "ほにほに！ふわっ！ふわっ！٩(*╹ω╹*)و！！",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "node index.js",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "start": "node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/honifuwa-girls/honifuwa-project/issues"
   },
-  "homepage": "https://github.com/honifuwa-girls/honifuwa-project#readme"
+  "homepage": "https://github.com/honifuwa-girls/honifuwa-project#readme",
+  "devDependencies": {
+    "typescript": "^4.3.2"
+  }
 }
